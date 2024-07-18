@@ -1,0 +1,478 @@
+{% extends "base.html" %} {% load static %} {% block title %} Ashish Nirmal -
+Portfolio {% endblock %} {% block content %}
+
+<section class="bg-dark text-white text-center py-5 mb-4">
+  <div class="container">
+    <h1 class="display-1">Ashish Nirmal</h1>
+    <p class="lead">Aspiring Software Developer | AI & ML Enthusiast</p>
+  </div>
+</section>
+
+<section id="about" class="py-5 bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="mb-4">
+          <h5 class="display-6 mb-4 text-left">About Me</h5>
+        </div>
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-5">
+            <div class="mb-3">
+              <h5 class="card-title display-6">Hello!</h5>
+            </div>
+            <p class="card-text">
+              I am Ashish Nirmal, a passionate and creative Computer Science and
+              Engineering student specializing in Artificial Intelligence and
+              Machine Learning at the <strong>Adani Institute of Infrastructure
+              Engineering</strong>. With a strong academic record and hands-on experience
+              in programming languages such as Java, Kotlin, C, and Python, I
+              love to develop innovative software solutions that address
+              real-world problems. I am eager to leverage my technical
+              skills and creativity in a dynamic and challenging environment,
+              contributing to impactful software solutions and driving
+              technological advancements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="display-6 mb-4 text-left">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item mb-5 position-relative">
+            <div class="row align-items-center">
+              <div class="col-md-2 text-md-right text-center mb-3 mb-md-0">
+                <span class="timeline-date">2021 - 2025</span>
+              </div>
+              <div class="col-md-10">
+                <div class="card bg-dark text-white shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Bachelor of Engineering – Computer Science & Engineering
+                      (AI - ML)
+                    </h5>
+                    <p class="card-text">
+                      Adani Institute of Infrastructure Engineering
+                    </p>
+                    <span class="timeline-date">CGPA: 8.75</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item mb-5 position-relative">
+            <div class="row align-items-center">
+              <div class="col-md-2 text-md-right text-center mb-3 mb-md-0">
+                <span class="timeline-date">2019 - 2021</span>
+              </div>
+              <div class="col-md-10">
+                <div class="card bg-dark text-white shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">Higher Secondary School</h5>
+                    <p class="card-text">Utkarsh Higher Secondary School</p>
+                    <span class="timeline-date">Percentage: 77.23%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="display-6 mb-4 text-left">Projects</h2>
+    <div class="row">
+      {% comment %} TuneMood Card View {% endcomment %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{% static 'images/CareerExplorer.png' %}"
+            class="card-img-top img-fluid p-3"
+            alt="TuneMood Project"
+          />
+          <div class="card-body">
+            <h5 class="card-title">TuneMood: AI-based music player app</h5>
+            <p class="card-text">
+              An AI-based music player app that curates song recommendations
+              based on user mood and preferences. Utilizes emotional
+              intelligence and advanced algorithms for a personalized listening
+              experience.
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#moreInfoTuneMood"
+              aria-expanded="false"
+              aria-controls="moreInfoTuneMood"
+            >
+              More Info
+            </button>
+            <a
+              href="https://github.com/Ashking1956/TuneMood"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="align-self-end"
+            >
+              <img
+                src="{% static 'icons/github_icon.png' %}"
+                class="img-fluid"
+                alt="GitHub"
+                style="max-width: 30px"
+              />
+            </a>
+          </div>
+          <ul
+            class="list-group list-group-flush collapse"
+            id="moreInfoTuneMood"
+          >
+            <li class="list-group-item">
+              <strong>Tools:</strong> Kotlin, Jetpack Compose, Android Studio,
+              Python
+            </li>
+            <li class="list-group-item">
+              <strong>Features:</strong> Mood detection, personalized playlists,
+              voice commands
+            </li>
+            <li class="list-group-item">
+              <strong>Challenges:</strong> Implementing real-time mood
+              detection, optimizing recommendation algorithms
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {% comment %} ExplorerInns Card View {% endcomment %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{% static 'images/ExplorerInns.png' %}"
+            class="card-img-top img-fluid"
+            alt="ExplorerInns Project"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              ExplorerInns: ML-based recommendation system for accommodation
+            </h5>
+            <p class="card-text">
+              A comprehensive ML-based recommendation system for accommodation
+              planning. Provides personalized lodging suggestions and detailed
+              information to enhance travel experiences.
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#moreInfoExplorerInns"
+              aria-expanded="false"
+              aria-controls="moreInfoExplorerInns"
+            >
+              More Info
+            </button>
+            <a
+              href="https://github.com/Ashking1956/ExplorerInns"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="align-self-end"
+            >
+              <img
+                src="{% static 'icons/github_icon.png' %}"
+                class="img-fluid"
+                alt="GitHub"
+                style="max-width: 30px"
+              />
+            </a>
+          </div>
+          <ul
+            class="list-group list-group-flush collapse"
+            id="moreInfoExplorerInns"
+          >
+            <li class="list-group-item">
+              <strong>Tools:</strong> React.js, Node.js, Express.js, MongoDB,
+              Mongoose, Python
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {% comment %} CareerExplorer Card View {% endcomment %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{% static 'images/CareerExplorer.png' %}"
+            class="card-img-top img-fluid p-3"
+            alt="CareerExplorer Project"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              CareerExplorer: Platform for exploring career paths
+            </h5>
+            <p class="card-text">
+              A platform for exploring potential career paths, offering insights
+              into industries, job roles, and educational requirements. Features
+              personalized career assessments and up-to-date industry
+              information.
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#moreInfoCareerExplorer"
+              aria-expanded="false"
+              aria-controls="moreInfoCareerExplorer"
+            >
+              More Info
+            </button>
+            <a
+              href="https://github.com/Ashking1956/CareerExplorer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="align-self-end"
+            >
+              <img
+                src="{% static 'icons/github_icon.png' %}"
+                class="img-fluid"
+                alt="GitHub"
+                style="max-width: 30px"
+              />
+            </a>
+          </div>
+          <ul
+            class="list-group list-group-flush collapse"
+            id="moreInfoCareerExplorer"
+          >
+            <li class="list-group-item">
+              <strong>Tools:</strong> HTML, CSS, JavaScript, MySQL, React.js,
+              Node.js, Express.js, MongoDB, Mongoose
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {% comment %} E-Seva Card View {% endcomment %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img
+            src="{% static 'images/CareerExplorer.png' %}"
+            class="card-img-top img-fluid p-3"
+            alt="E Seva Project"
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              E – Seva: Application for awareness about government schemes
+            </h5>
+            <p class="card-text">
+              An application providing awareness about government schemes
+              tailored to different professions. Offers guides on eligibility,
+              necessary documents, and locations of government offices for both
+              state and central schemes.
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-toggle="collapse"
+              data-target="#moreInfoESeva"
+              aria-expanded="false"
+              aria-controls="moreInfoESeva"
+            >
+              More Info
+            </button>
+            <a
+              href="https://github.com/Ashking1956/E-Seva"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="align-self-end"
+            >
+              <img
+                src="{% static 'icons/github_icon.png' %}"
+                class="img-fluid"
+                alt="GitHub"
+                style="max-width: 30px"
+              />
+            </a>
+          </div>
+          <ul class="list-group list-group-flush collapse" id="moreInfoESeva">
+            <li class="list-group-item">
+              <strong>Tools:</strong> Kotlin, Jetpack Compose, Android Studio
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="display-6 mb-4 text-left">Skills</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card bg-dark text-white mb-2 shadow-sm border-2">
+          <div class="card-body">
+            <h5 class="card-title">Programming Languages</h5>
+            <p class="card-text">C, Java, Kotlin, Python, JavaScript</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white mb-2 shadow-sm border-2">
+          <div class="card-body">
+            <h5 class="card-title">Frontend Development</h5>
+            <p class="card-text">HTML, CSS, React.js</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white mb-2 shadow-sm border-2">
+          <div class="card-body">
+            <h5 class="card-title">Backend Development</h5>
+            <p class="card-text">Node.js, Express.js, Django</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card bg-dark text-white mb-2 shadow-sm border-2">
+          <div class="card-body">
+            <h5 class="card-title">Database Management</h5>
+            <p class="card-text">MySQL, MongoDB, PostgreSQL</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white mb-2 shadow-sm border-2">
+          <div class="card-body">
+            <h5 class="card-title">Machine Learning</h5>
+            <p class="card-text">
+              Data Analysis, Model Training, TensorFlow, Keras
+            </p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white mb-2 shadow-sm border-2">
+          <div class="card-body">
+            <h5 class="card-title">Version Control</h5>
+            <p class="card-text">Git, GitHub</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %}
+<section id="Certificates">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Certificates</h2>
+    <div
+      id="certificateCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{% static 'certificates/ai_fundamentals_ibm_badge.png' %}"
+            class="d-block w-100"
+            alt="Certificate 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{% static 'certificates/ai_fundamentals_ibm_badge.png' %}"
+            class="d-block w-100"
+            alt="Certificate 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{% static 'certificates/ai_fundamentals_ibm_badge.png' %}"
+            class="d-block w-100"
+            alt="Certificate 3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#certificateCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#certificateCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+{% endcomment %}
+
+<section id="contact" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="display-6 mb-4 text-left text-white">Contact</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title">Get in Touch</h5>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title">Contact Information</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:nirmal.ashish2004@gmail.com"
+                  >nirmal.ashish2004@gmail.com</a
+                >
+              </li>
+              <li><i class="bi bi-telephone"></i> +91 99136 25073</li>
+              <li><i class="bi bi-geo-alt"></i> Ahmedabad, Gujarat, India</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}
