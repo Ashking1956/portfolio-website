@@ -29,6 +29,7 @@
       integrity="sha384-+b6/+oYsW8rpE59UhsuVcZHTg5Em0hOf2CWYZlbiWzQ29ZoF+bxN2Fp9NlV6BgsI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome for icons (optional) -->
     <link
       rel="stylesheet"
@@ -43,13 +44,11 @@
 
       .navbar-nav .nav-link:hover {
         color: #ffffff;
-        /* Change to desired hover color */
       }
 
       body {
         margin: 0;
         padding-top: 56px; /* Adjust for the navbar height */
-
         font-family: "Roboto Mono";
         font-optical-sizing: auto;
         font-weight: 200;
@@ -96,12 +95,24 @@
       .footer {
         margin-left: 80px;
       }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+
+        .content,
+        .footer {
+          margin-left: 0;
+        }
+      }
     </style>
   </head>
 
   <body data-bs-theme="dark">
     {% comment %} navigation bar {% endcomment %}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Ashish Nirmal</a>
         <button
@@ -115,7 +126,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link active" aria-current="page" href="#about"
               >About</a
