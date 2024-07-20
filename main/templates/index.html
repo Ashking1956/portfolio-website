@@ -23,14 +23,15 @@ Portfolio {% endblock %} {% block content %}
             <p class="card-text">
               I am Ashish Nirmal, a passionate and creative Computer Science and
               Engineering student specializing in Artificial Intelligence and
-              Machine Learning at the <strong>Adani Institute of Infrastructure
-              Engineering</strong>. With a strong academic record and hands-on experience
-              in programming languages such as Java, Kotlin, C, and Python, I
-              love to develop innovative software solutions that address
-              real-world problems. I am eager to leverage my technical
-              skills and creativity in a dynamic and challenging environment,
-              contributing to impactful software solutions and driving
-              technological advancements.
+              Machine Learning at the
+              <strong>Adani Institute of Infrastructure Engineering</strong>.
+              With a strong academic record and hands-on experience in
+              programming languages such as Java, Kotlin, C, and Python, I love
+              to develop innovative software solutions that address real-world
+              problems. I am eager to leverage my technical skills and
+              creativity in a dynamic and challenging environment, contributing
+              to impactful software solutions and driving technological
+              advancements.
             </p>
           </div>
         </div>
@@ -88,6 +89,112 @@ Portfolio {% endblock %} {% block content %}
   </div>
 </section>
 
+<section id="experience" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="display-6 mb-4 text-left text-white">Experience</h2>
+    <div class="timeline position-relative">
+      <!-- Timeline Item -->
+      {% comment %} Prodigy Internship {% endcomment %}
+      <div class="timeline-item mb-5 position-relative">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-md-right text-center mb-3 mb-md-0">
+            <span class="timeline-date bg-dark text-whitepy-2 px-3 rounded">
+              July 2024
+            </span>
+          </div>
+          <div class="col-md-10">
+            <div class="card bg-dark text-light shadow-lg border-1">
+              <div class="card-body">
+                <h5 class="card-title text-white">
+                  Android Development Intern
+                </h5>
+                <p class="card-text text-muted mb-3">@Prodigy Infortech</p>
+                <ul class="list-styled">
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Completed a 1-month educational internship focusing on
+                    Android Development.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Gained hands-on experience and practical skills in Android
+                    development.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Developed various Android applications, including a
+                    <strong>Calculator</strong> App for arithmetic operations, a
+                    <strong>To-Do List</strong> App with task management
+                    functionalities (add, edit, delete), a
+                    <strong>Tic Tac Toe</strong> Game App with turn-based
+                    gameplay and reset options, and a
+                    <strong>QR Code Scanner</strong> App to scan and interpret
+                    QR codes, display encoded information, and perform actions
+                    based on the content.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Enhanced technical knowledge and contributed to development
+                    projects.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Timeline Item -->
+      {% comment %} IBM AI ML Internship {% endcomment %}
+      <div class="timeline-item mb-5 position-relative">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-md-right text-center mb-3 mb-md-0">
+            <span class="timeline-date bg-dark text-white py-2 px-3 rounded">
+              June 2024
+            </span>
+          </div>
+          <div class="col-md-10">
+            <div class="card bg-dark text-light shadow-lg border-1">
+              <div class="card-body">
+                <h5 class="card-title text-white">
+                  IBM SkillsBuild AI-ML Internship
+                </h5>
+                <p class="card-text text-muted mb-3">@IBM</p>
+                <ul class="list-styled">
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Completed a 3-week AI-focused internship with IBM
+                    SkillsBuild and CSRBOX.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Enhanced technical and professional skills through curated
+                    courses on the IBM SkillsBuild platform.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Attended masterclasses on Generative AI, Transformers, Large
+                    Language Models, and ML with Python.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Designed and fine-tuned a chatbot using Watson Assistant.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                    Completed and presented a final AI project, earning
+                    certification from IBM SkillsBuild.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add More Timeline Items as needed -->
+    </div>
+  </div>
+</section>
+
 <section id="projects" class="py-5 bg-dark">
   <div class="container">
     <h2 class="display-6 mb-4 text-left">Projects</h2>
@@ -130,7 +237,7 @@ Portfolio {% endblock %} {% block content %}
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
-                style="max-width: 30px"
+                style="max-width: 30px; filter: invert(100%) brightness(100%)"
               />
             </a>
           </div>
@@ -193,7 +300,7 @@ Portfolio {% endblock %} {% block content %}
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
-                style="max-width: 30px"
+                style="max-width: 30px; filter: invert(100%) brightness(100%)"
               />
             </a>
           </div>
@@ -246,10 +353,10 @@ Portfolio {% endblock %} {% block content %}
               class="align-self-end"
             >
               <img
+                style="filter: invert(100%) brightness(100%); max-width: 30px"
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
-                style="max-width: 30px"
               />
             </a>
           </div>
@@ -302,10 +409,10 @@ Portfolio {% endblock %} {% block content %}
               class="align-self-end"
             >
               <img
+                style="filter: invert(100%) brightness(100%); max-width: 30px"
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
-                style="max-width: 30px"
               />
             </a>
           </div>
