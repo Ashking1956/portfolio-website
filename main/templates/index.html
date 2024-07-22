@@ -91,10 +91,10 @@ Portfolio {% endblock %} {% block content %}
 
 <section id="experience" class="py-5 bg-dark text-white">
   <div class="container">
-    <h2 class="display-6 mb-4 text-white">Experience</h2>
+    <h2 class="display-6 mb-4 text-white text-center">Experience</h2>
     <div class="timeline position-relative">
       <!-- Timeline Item -->
-      <div class="timeline-item mb-3 position-relative">
+      <div class="timeline-item mb-4 position-relative">
         <div class="row align-items-center">
           <div class="col-md-2 text-md-right text-center mb-3 mb-md-0">
             <span class="timeline-date bg-dark text-white py-2 px-3 rounded">
@@ -102,7 +102,7 @@ Portfolio {% endblock %} {% block content %}
             </span>
           </div>
           <div class="col-md-10">
-            <div class="card bg-dark text-white shadow-lg border-2">
+            <div class="card bg-dark text-white shadow-lg border-0 h-100">
               <div class="card-body">
                 <h5 class="card-title text-white">
                   Android Development Intern
@@ -110,23 +110,23 @@ Portfolio {% endblock %} {% block content %}
                 <p class="card-text text-muted mb-3">@Prodigy Infotech</p>
                 <ul class="list-styled">
                   <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-white me-2"></i>
-                    Completed a 1-month educational internship focusing on
+                    <i class="bi bi-check-circle-fill text-white me-2"></i
+                    >Completed a 1-month educational internship focusing on
                     Android Development.
                   </li>
                   <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-white me-2"></i>
-                    Gained hands-on experience and practical skills in Android
+                    <i class="bi bi-check-circle-fill text-white me-2"></i
+                    >Gained hands-on experience and practical skills in Android
                     development.
                   </li>
                   <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-white me-2"></i>
-                    Enhanced technical knowledge and contributed to development
+                    <i class="bi bi-check-circle-fill text-white me-2"></i
+                    >Enhanced technical knowledge and contributed to development
                     projects.
                   </li>
                   <li class="mb-2">
-                    <i class="bi bi-check-circle-fill card-title me-2"></i>
-                    <strong><strong>Project Details</strong></strong>
+                    <i class="bi bi-check-circle-fill text-white me-2"></i
+                    ><strong>Project Details</strong>
                   </li>
                 </ul>
                 <section id="projects" class="container mt-3">
@@ -176,9 +176,13 @@ Portfolio {% endblock %} {% block content %}
                     <div class="carousel-inner">
                       <!-- Calculator App -->
                       <div class="carousel-item active">
-                        <div class="card mx-2 shadow-sm border-2">
+                        <div
+                          class="card bg-dark text-white mx-2 shadow-sm border-1 h-100"
+                        >
                           <div class="card-body">
-                            <h5 class="card-title">Calculator App</h5>
+                            <h5 class="card-title text-white">
+                              Calculator App
+                            </h5>
                             <ul class="list-styled">
                               <li>
                                 <p class="card-text">
@@ -202,14 +206,35 @@ Portfolio {% endblock %} {% block content %}
                                 </p>
                               </li>
                             </ul>
+                            <div class="card-footer d-flex justify-content-end">
+                              <a
+                                href="https://github.com/Ashking1956/TuneMood"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src="{% static 'icons/github_icon.png' %}"
+                                  class="img-fluid"
+                                  alt="GitHub"
+                                  style="
+                                    max-width: 30px;
+                                    filter: invert(100%) brightness(100%);
+                                  "
+                                />
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <!-- To-Do List App -->
                       <div class="carousel-item">
-                        <div class="card mx-2 shadow-sm border-2">
+                        <div
+                          class="card bg-dark text-white mx-2 shadow-sm border-1 h-100"
+                        >
                           <div class="card-body">
-                            <h5 class="card-title">To-Do List App</h5>
+                            <h5 class="card-title text-white">
+                              To-Do List App
+                            </h5>
                             <ul class="list-styled">
                               <li>
                                 <p class="card-text">
@@ -231,14 +256,34 @@ Portfolio {% endblock %} {% block content %}
                                 </p>
                               </li>
                             </ul>
+                            <div class="card-footer d-flex justify-content-end">
+                              <a
+                                href="https://github.com/Ashking1956/TuneMood"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src="{% static 'icons/github_icon.png' %}"
+                                  class="img-fluid"
+                                  alt="GitHub"
+                                  style="
+                                    max-width: 30px;
+                                    filter: invert(100%) brightness(100%);
+                                  "
+                                />
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
+
                       <!-- Stopwatch App -->
                       <div class="carousel-item">
-                        <div class="card mx-2 shadow-sm border-2">
+                        <div
+                          class="card bg-dark text-white mx-2 shadow-sm border-1 h-100"
+                        >
                           <div class="card-body">
-                            <h5 class="card-title">Stopwatch App</h5>
+                            <h5 class="card-title text-white">Stopwatch App</h5>
                             <ul class="list-styled">
                               <li>
                                 <p class="card-text">
@@ -261,14 +306,36 @@ Portfolio {% endblock %} {% block content %}
                                 </p>
                               </li>
                             </ul>
+                            <div class="card-footer d-flex justify-content-end">
+                              <a
+                                href="https://github.com/Ashking1956/TuneMood"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src="{% static 'icons/github_icon.png' %}"
+                                  class="img-fluid"
+                                  alt="GitHub"
+                                  style="
+                                    max-width: 30px;
+                                    filter: invert(100%) brightness(100%);
+                                  "
+                                />
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
+
                       <!-- Tic Tac Toe Game App -->
                       <div class="carousel-item">
-                        <div class="card mx-2 shadow-sm border-2">
+                        <div
+                          class="card bg-dark text-white mx-2 shadow-sm border-1 h-100"
+                        >
                           <div class="card-body">
-                            <h5 class="card-title">Tic Tac Toe Game App</h5>
+                            <h5 class="card-title text-white">
+                              Tic Tac Toe Game App
+                            </h5>
                             <ul class="list-styled">
                               <li>
                                 <p class="card-text">
@@ -290,14 +357,36 @@ Portfolio {% endblock %} {% block content %}
                                 </p>
                               </li>
                             </ul>
+                            <div class="card-footer d-flex justify-content-end">
+                              <a
+                                href="https://github.com/Ashking1956/TuneMood"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src="{% static 'icons/github_icon.png' %}"
+                                  class="img-fluid"
+                                  alt="GitHub"
+                                  style="
+                                    max-width: 30px;
+                                    filter: invert(100%) brightness(100%);
+                                  "
+                                />
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
+
                       <!-- QR Code Scanner App -->
                       <div class="carousel-item">
-                        <div class="card mx-2 shadow-sm border-2">
+                        <div
+                          class="card bg-dark text-white mx-2 shadow-sm border-1 h-100"
+                        >
                           <div class="card-body">
-                            <h5 class="card-title">QR Code Scanner App</h5>
+                            <h5 class="card-title text-white">
+                              QR Code Scanner App
+                            </h5>
                             <ul class="list-styled">
                               <li>
                                 <p class="card-text">
@@ -322,6 +411,23 @@ Portfolio {% endblock %} {% block content %}
                                 </p>
                               </li>
                             </ul>
+                            <div class="card-footer d-flex justify-content-end">
+                              <a
+                                href="https://github.com/Ashking1956/TuneMood"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src="{% static 'icons/github_icon.png' %}"
+                                  class="img-fluid"
+                                  alt="GitHub"
+                                  style="
+                                    max-width: 30px;
+                                    filter: invert(100%) brightness(100%);
+                                  "
+                                />
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -744,222 +850,212 @@ Portfolio {% endblock %} {% block content %}
 </section>
 
 <section id="achievements" class="container mt-5">
-  <h2 class="text-center mb-4">Achievements</h2>
-  <div class="row">
-    {% comment %} AU IBM Hackathon Season 2 {% endcomment %}
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card shadow-lg border-2 rounded">
-        <div class="card-body">
-          <h5 class="card-title mb-3">
-            AU-IQM Corporation Hackathon 2023 Season 2
-          </h5>
-          <p class="card-text"><strong>Date:</strong> 29/07/23 – 30/07/23</p>
-          <p class="card-text"><strong>Venue:</strong> Adani University</p>
-          <p class="card-text"><strong>Ranked:</strong> First</p>
-          <p class="card-text mb-3">
-            <strong>Introduction:</strong> NewsHub is a hackathon-winning web
-            platform designed to revolutionize how users read and share news.
-            Recognized for its innovative design and user-centric approach,
-            NewsHub was developed using React.js, Node.js, Express.js, and
-            MongoDB, focusing on personalized recommendations and intuitive
-            search by pin code.
-          </p>
-          <!-- Collapse for additional details -->
-          <div class="collapse" id="hackathonDetails">
-            <p class="card-text">
-              <strong>Problem Statement:</strong> In today's fast-paced world,
-              staying updated with relevant news can be challenging. NewsHub
-              addresses this by offering a personalized news reading experience
-              based on users' interests and locations.
-            </p>
-            <p class="card-text">
-              <strong>Approach:</strong> Our approach was bottom-to-top,
-              starting with user needs and building a robust platform around
-              those requirements. This method ensured a user-friendly interface
-              and seamless functionality.
-            </p>
-            <p class="card-text">
-              <strong>Solution:</strong> NewsHub provides a streamlined user
-              flow from registration to news consumption, featuring personalized
-              recommendations, category selection, and intuitive search and
-              filter options.
-            </p>
+  <h2 class="text-center mb-4 text-whitemary">Achievements</h2>
+  <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#achievementsCarousel"
+        data-bs-slide-to="0"
+        class="active bg-white"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#achievementsCarousel"
+        data-bs-slide-to="1"
+        class="bg-primary"
+        aria-labg-white="2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#achievementsCarousel"
+        data-bs-slide-to="2"
+        class="bg-primary"
+        aria-labg-white="3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      {% comment %} AU-IBM Hackathon Season 2 {% endcomment %}
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <div class="card w-100 shadow-lg border-2 rounded-lg">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-3 text-whitemary">
+                AU-IQM Corporation Hackathon 2023 Season 2
+              </h5>
+              <p class="card-text">
+                <strong>Date:</strong> 29/07/23 – 30/07/23
+              </p>
+              <p class="card-text"><strong>Venue:</strong> Adani University</p>
+              <p class="card-text"><strong>Ranked:</strong> First</p>
+              <p class="card-text mb-3">
+                <strong>Introduction:</strong> NewsHub is a hackathon-winning
+                web platform designed to revolutionize how users read and share
+                news. Recognized for its innovative design and user-centric
+                approach, NewsHub was developed using React.js, Node.js,
+                Express.js, and MongoDB, focusing on personalized
+                recommendations and intuitive search by pin code.
+              </p>
+              <p class="card-text">
+                <strong>Problem Statement:</strong> In today's fast-paced world,
+                staying updated with relevant news can be challenging. NewsHub
+                addresses this by offering a personalized news reading
+                experience based on users' interests and locations.
+              </p>
+              <p class="card-text">
+                <strong>Approach:</strong> Our approach was bottom-to-top,
+                starting with user needs and building a robust platform around
+                those requirements. This method ensured a user-friendly
+                interface and seamless functionality.
+              </p>
+              <p class="card-text">
+                <strong>Solution:</strong> NewsHub provides a streamlined user
+                flow from registration to news consumption, featuring
+                personalized recommendations, category selection, and intuitive
+                search and filter options.
+              </p>
+            </div>
+            <div class="card-footer d-flex align-right">
+              <a
+                href="https://github.com/Ashking1956/TuneMood"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="align-self-end"
+              >
+                <img
+                  src="{% static 'icons/github_icon.png' %}"
+                  class="img-fluid"
+                  alt="GitHub"
+                  style="max-width: 30px; filter: invert(100%) brightness(100%)"
+                />
+              </a>
+            </div>
           </div>
         </div>
-        <div
-          class="card-footer d-flex justify-content-between align-items-center"
-        >
-          <button
-            class="btn btn-outline-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#hackathonDetails"
-            aria-expanded="false"
-            aria-controls="hackathonDetails"
-          >
-            More Info
-          </button>
-          <a
-            href="https://github.com/Ashking1956/NewsHub"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline-dark"
-          >
-            <img
-              src="{% static 'icons/github_icon.png' %}"
-              class="img-fluid"
-              alt="GitHub"
-              style="max-width: 24px; filter: invert(100%) brightness(100%)"
-            />
-            GitHub
-          </a>
-        </div>
       </div>
-    </div>
-
-    {% comment %} DAIICT Hackathon {% endcomment %}
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card shadow-lg border-2 rounded">
-        <div class="card-body">
-          <h5 class="card-title mb-3">DUHacks 3.0 Hackathon</h5>
-          <p class="card-text"><strong>Date:</strong> 23/02/24 – 25/02/24</p>
-          <p class="card-text"><strong>Venue:</strong> Online</p>
-          <p class="card-text"><strong>Ranked:</strong> Top 50</p>
-          <p class="card-text mb-3">
-            <strong>Introduction:</strong> AutoCraftML is an innovative web
-            platform developed for DUHacks 3.0, designed to automate the machine
-            learning pipeline. This tool empowers users to effortlessly upload
-            datasets, preprocess data, and train models with minimal effort,
-            making machine learning accessible to those without extensive
-            expertise.
-          </p>
-          <!-- Collapse for additional details -->
-          <div class="collapse" id="hackathonDetails11">
-            <p class="card-text">
-              <strong>Problem Statement:</strong> Machine learning can be
-              complex and time-consuming, especially for users without a deep
-              understanding of data science. AutoCraftML simplifies this process
-              by automating repetitive tasks and offering an intuitive interface
-              for efficient model development and deployment.
-            </p>
-            <p class="card-text">
-              <strong>Approach:</strong> Our approach focuses on creating a
-              user-friendly platform that streamlines the machine learning
-              workflow. By automating data preprocessing, model training, and
-              visualization, we reduce the manual effort required and make
-              advanced machine learning accessible to a broader audience.
-            </p>
-            <p class="card-text">
-              <strong>Solution:</strong> AutoCraftML provides an end-to-end
-              solution for automating machine learning tasks, including data
-              upload, preprocessing, model training, and visualization. The
-              platform supports both classification and regression tasks and
-              allows users to download their trained models for future use.
-            </p>
+      {% comment %} DUHacks 3.0 DDU{% endcomment %}
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <div class="card w-100 shadow-lg border-2 rounded-lg">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-3 text-whitemary">
+                DUHacks 3.0 Hackathon
+              </h5>
+              <p class="card-text">
+                <strong>Date:</strong> 23/02/24 – 25/02/24
+              </p>
+              <p class="card-text"><strong>Venue:</strong> Online</p>
+              <p class="card-text"><strong>Ranked:</strong> Top 50</p>
+              <p class="card-text mb-3">
+                <strong>Introduction:</strong> AutoCraftML is an innovative web
+                platform developed for DUHacks 3.0, designed to automate the
+                machine learning pipeline. This tool empowers users to
+                effortlessly upload datasets, preprocess data, and train models
+                with minimal effort, making machine learning accessible to those
+                without extensive expertise.
+              </p>
+              <p class="card-text">
+                <strong>Problem Statement:</strong> Machine learning can be
+                complex and time-consuming, especially for users without a deep
+                understanding of data science. AutoCraftML simplifies this
+                process by automating repetitive tasks and offering an intuitive
+                interface for efficient model development and deployment.
+              </p>
+              <p class="card-text">
+                <strong>Approach:</strong> Our approach focuses on creating a
+                user-friendly platform that streamlines the machine learning
+                workflow. By automating data preprocessing, model training, and
+                visualization, we reduce the manual effort required and make
+                advanced machine learning accessible to a broader audience.
+              </p>
+              <p class="card-text">
+                <strong>Solution:</strong> AutoCraftML provides an end-to-end
+                solution for automating machine learning tasks, including data
+                upload, preprocessing, model training, and visualization. The
+                platform supports both classification and regression tasks and
+                allows users to download their trained models for future use.
+              </p>
+            </div>
+            <div class="card-footer d-flex align-right">
+              <a
+                href="https://github.com/Ashking1956/TuneMood"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="align-self-end"
+              >
+                <img
+                  src="{% static 'icons/github_icon.png' %}"
+                  class="img-fluid"
+                  alt="GitHub"
+                  style="max-width: 30px; filter: invert(100%) brightness(100%)"
+                />
+              </a>
+            </div>
           </div>
         </div>
-        <div
-          class="card-footer d-flex justify-content-between align-items-center"
-        >
-          <button
-            class="btn btn-outline-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#hackathonDetails11"
-            aria-expanded="false"
-            aria-controls="hackathonDetails11"
-          >
-            More Info
-          </button>
-          <a
-            href="https://github.com/Ashking1956/AutoCraftML"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline-dark"
-          >
-            <img
-              src="{% static 'icons/github_icon.png' %}"
-              class="img-fluid"
-              alt="GitHub"
-              style="max-width: 24px; filter: invert(100%) brightness(100%)"
-            />
-            GitHub
-          </a>
-        </div>
       </div>
-    </div>
-
-    {% comment %} Odoo Hackathon {% endcomment %}
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card shadow-lg border-2 rounded">
-        <div class="card-body">
-          <h5 class="card-title mb-3">
-            AU-IQM Corporation Hackathon 2023 Season 2
-          </h5>
-          <p class="card-text"><strong>Date:</strong> 29/07/23 – 30/07/23</p>
-          <p class="card-text"><strong>Venue:</strong> Adani University</p>
-          <p class="card-text"><strong>Ranked:</strong> First</p>
-          <p class="card-text mb-3">
-            <strong>Introduction:</strong> NewsHub is a hackathon-winning web
-            platform designed to revolutionize how users read and share news.
-            Recognized for its innovative design and user-centric approach,
-            NewsHub was developed using React.js, Node.js, Express.js, and
-            MongoDB, focusing on personalized recommendations and intuitive
-            search by pin code.
-          </p>
-          <!-- Collapse for additional details -->
-          <div class="collapse" id="hackathonDetails">
-            <p class="card-text">
-              <strong>Problem Statement:</strong> In today's fast-paced world,
-              staying updated with relevant news can be challenging. NewsHub
-              addresses this by offering a personalized news reading experience
-              based on users' interests and locations.
-            </p>
-            <p class="card-text">
-              <strong>Approach:</strong> Our approach was bottom-to-top,
-              starting with user needs and building a robust platform around
-              those requirements. This method ensured a user-friendly interface
-              and seamless functionality.
-            </p>
-            <p class="card-text">
-              <strong>Solution:</strong> NewsHub provides a streamlined user
-              flow from registration to news consumption, featuring personalized
-              recommendations, category selection, and intuitive search and
-              filter options.
-            </p>
+      {% comment %} Odoo Hackathon {% endcomment %}
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <div class="card w-100 shadow-lg border-2 rounded-lg">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-3 text-whitemary">
+                AU-IQM Corporation Hackathon 2023 Season 2
+              </h5>
+              <p class="card-text">
+                <strong>Date:</strong> 29/07/23 – 30/07/23
+              </p>
+              <p class="card-text"><strong>Venue:</strong> Adani University</p>
+              <p class="card-text"><strong>Ranked:</strong> First</p>
+              <p class="card-text mb-3">
+                <strong>Introduction:</strong> NewsHub is a hackathon-winning
+                web platform designed to revolutionize how users read and share
+                news. Recognized for its innovative design and user-centric
+                approach, NewsHub was developed using React.js, Node.js,
+                Express.js, and MongoDB, focusing on personalized
+                recommendations and intuitive search by pin code.
+              </p>
+              <p class="card-text">
+                <strong>Problem Statement:</strong> In today's fast-paced world,
+                staying updated with relevant news can be challenging. NewsHub
+                addresses this by offering a personalized news reading
+                experience based on users' interests and locations.
+              </p>
+              <p class="card-text">
+                <strong>Approach:</strong> Our approach was bottom-to-top,
+                starting with user needs and building a robust platform around
+                those requirements. This method ensured a user-friendly
+                interface and seamless functionality.
+              </p>
+              <p class="card-text">
+                <strong>Solution:</strong> NewsHub provides a streamlined user
+                flow from registration to news consumption, featuring
+                personalized recommendations, category selection, and intuitive
+                search and filter options.
+              </p>
+            </div>
+            <div class="card-footer d-flex align-right">
+              <a
+                href="https://github.com/Ashking1956/TuneMood"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="align-self-end"
+              >
+                <img
+                  src="{% static 'icons/github_icon.png' %}"
+                  class="img-fluid"
+                  alt="GitHub"
+                  style="max-width: 30px; filter: invert(100%) brightness(100%)"
+                />
+              </a>
+            </div>
           </div>
         </div>
-        <div
-          class="card-footer d-flex justify-content-between align-items-center"
-        >
-          <button
-            class="btn btn-outline-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#hackathonDetails"
-            aria-expanded="false"
-            aria-controls="hackathonDetails"
-          >
-            More Info
-          </button>
-          <a
-            href="https://github.com/Ashking1956/NewsHub"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline-dark"
-          >
-            <img
-              src="{% static 'icons/github_icon.png' %}"
-              class="img-fluid"
-              alt="GitHub"
-              style="max-width: 24px; filter: invert(100%) brightness(100%)"
-            />
-            GitHub
-          </a>
-        </div>
       </div>
+      {% comment %} TODO: DAIICT Hackathon Hack'out 23{% endcomment %}
     </div>
-    <!-- Add more cards for additional achievements if needed -->
   </div>
 </section>
 
@@ -968,7 +1064,7 @@ Portfolio {% endblock %} {% block content %}
     <h2 class="display-6 mb-4 text-left text-white">Contact</h2>
     <div class="row">
       <div class="col-md-6 mb-4">
-        <div class="card shadow-sm border-0 h-100">
+        <div class="card shadow-sm border-2 h-100">
           <div class="card-body">
             <h5 class="card-title">Get in Touch</h5>
             <form>
@@ -990,10 +1086,10 @@ Portfolio {% endblock %} {% block content %}
         </div>
       </div>
       <div class="col-md-6 mb-4">
-        <div class="card shadow-sm border-0 h-100">
+        <div class="card shadow-sm border-2 h-100">
           <div class="card-body">
             <h5 class="card-title">Contact Information</h5>
-            <ul class="list-unstyled">
+            <ul class="list-styled">
               <li>
                 <i class="bi bi-envelope"></i>
                 <a href="mailto:nirmal.ashish2004@gmail.com"
