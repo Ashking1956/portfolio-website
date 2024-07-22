@@ -326,30 +326,6 @@ Portfolio {% endblock %} {% block content %}
                         </div>
                       </div>
                     </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#projectCarousel"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#projectCarousel"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
                 </section>
               </div>
@@ -404,11 +380,11 @@ Portfolio {% endblock %} {% block content %}
         </div>
       </div>
       <!-- Add More Timeline Items as needed -->
-    </div><strong>
+    </div>
   </div>
 </section>
 
-<section id="projects" class="py-5 bg-dark text-white"> text-muted
+<section id="projects" class="py-5 bg-dark text-white">
   <div class="container">
     <h2 class="display-6 mb-4 text-left">Projects</h2>
     <div class="row">
@@ -648,7 +624,9 @@ Portfolio {% endblock %} {% block content %}
         <div class="card bg-dark text-white mb-2 shadow-sm border-2">
           <div class="card-body">
             <h5 class="card-title">Programming Languages</h5>
-            <p class="card-text text-muted">C, Java, Kotlin, Python, JavaScript</p>
+            <p class="card-text text-muted">
+              C, Java, Kotlin, Python, JavaScript
+            </p>
           </div>
         </div>
         <div class="card bg-dark text-white mb-2 shadow-sm border-2">
@@ -690,7 +668,7 @@ Portfolio {% endblock %} {% block content %}
   </div>
 </section>
 
-<section id="Certificates">
+<section id="certificates" class="py-5 bg-dark text-white">
   <div class="container mt-5">
     <h2 class="display-6 mb-4 text-left">Certificates</h2>
     <div
@@ -762,6 +740,226 @@ Portfolio {% endblock %} {% block content %}
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div>
+</section>
+
+<section id="achievements" class="container mt-5">
+  <h2 class="text-center mb-4">Achievements</h2>
+  <div class="row">
+    {% comment %} AU IBM Hackathon Season 2 {% endcomment %}
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-lg border-2 rounded">
+        <div class="card-body">
+          <h5 class="card-title mb-3">
+            AU-IQM Corporation Hackathon 2023 Season 2
+          </h5>
+          <p class="card-text"><strong>Date:</strong> 29/07/23 – 30/07/23</p>
+          <p class="card-text"><strong>Venue:</strong> Adani University</p>
+          <p class="card-text"><strong>Ranked:</strong> First</p>
+          <p class="card-text mb-3">
+            <strong>Introduction:</strong> NewsHub is a hackathon-winning web
+            platform designed to revolutionize how users read and share news.
+            Recognized for its innovative design and user-centric approach,
+            NewsHub was developed using React.js, Node.js, Express.js, and
+            MongoDB, focusing on personalized recommendations and intuitive
+            search by pin code.
+          </p>
+          <!-- Collapse for additional details -->
+          <div class="collapse" id="hackathonDetails">
+            <p class="card-text">
+              <strong>Problem Statement:</strong> In today's fast-paced world,
+              staying updated with relevant news can be challenging. NewsHub
+              addresses this by offering a personalized news reading experience
+              based on users' interests and locations.
+            </p>
+            <p class="card-text">
+              <strong>Approach:</strong> Our approach was bottom-to-top,
+              starting with user needs and building a robust platform around
+              those requirements. This method ensured a user-friendly interface
+              and seamless functionality.
+            </p>
+            <p class="card-text">
+              <strong>Solution:</strong> NewsHub provides a streamlined user
+              flow from registration to news consumption, featuring personalized
+              recommendations, category selection, and intuitive search and
+              filter options.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card-footer d-flex justify-content-between align-items-center"
+        >
+          <button
+            class="btn btn-outline-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#hackathonDetails"
+            aria-expanded="false"
+            aria-controls="hackathonDetails"
+          >
+            More Info
+          </button>
+          <a
+            href="https://github.com/Ashking1956/NewsHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-dark"
+          >
+            <img
+              src="{% static 'icons/github_icon.png' %}"
+              class="img-fluid"
+              alt="GitHub"
+              style="max-width: 24px; filter: invert(100%) brightness(100%)"
+            />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {% comment %} DAIICT Hackathon {% endcomment %}
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-lg border-2 rounded">
+        <div class="card-body">
+          <h5 class="card-title mb-3">DUHacks 3.0 Hackathon</h5>
+          <p class="card-text"><strong>Date:</strong> 23/02/24 – 25/02/24</p>
+          <p class="card-text"><strong>Venue:</strong> Online</p>
+          <p class="card-text"><strong>Ranked:</strong> Top 50</p>
+          <p class="card-text mb-3">
+            <strong>Introduction:</strong> AutoCraftML is an innovative web
+            platform developed for DUHacks 3.0, designed to automate the machine
+            learning pipeline. This tool empowers users to effortlessly upload
+            datasets, preprocess data, and train models with minimal effort,
+            making machine learning accessible to those without extensive
+            expertise.
+          </p>
+          <!-- Collapse for additional details -->
+          <div class="collapse" id="hackathonDetails11">
+            <p class="card-text">
+              <strong>Problem Statement:</strong> Machine learning can be
+              complex and time-consuming, especially for users without a deep
+              understanding of data science. AutoCraftML simplifies this process
+              by automating repetitive tasks and offering an intuitive interface
+              for efficient model development and deployment.
+            </p>
+            <p class="card-text">
+              <strong>Approach:</strong> Our approach focuses on creating a
+              user-friendly platform that streamlines the machine learning
+              workflow. By automating data preprocessing, model training, and
+              visualization, we reduce the manual effort required and make
+              advanced machine learning accessible to a broader audience.
+            </p>
+            <p class="card-text">
+              <strong>Solution:</strong> AutoCraftML provides an end-to-end
+              solution for automating machine learning tasks, including data
+              upload, preprocessing, model training, and visualization. The
+              platform supports both classification and regression tasks and
+              allows users to download their trained models for future use.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card-footer d-flex justify-content-between align-items-center"
+        >
+          <button
+            class="btn btn-outline-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#hackathonDetails11"
+            aria-expanded="false"
+            aria-controls="hackathonDetails11"
+          >
+            More Info
+          </button>
+          <a
+            href="https://github.com/Ashking1956/AutoCraftML"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-dark"
+          >
+            <img
+              src="{% static 'icons/github_icon.png' %}"
+              class="img-fluid"
+              alt="GitHub"
+              style="max-width: 24px; filter: invert(100%) brightness(100%)"
+            />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {% comment %} Odoo Hackathon {% endcomment %}
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-lg border-2 rounded">
+        <div class="card-body">
+          <h5 class="card-title mb-3">
+            AU-IQM Corporation Hackathon 2023 Season 2
+          </h5>
+          <p class="card-text"><strong>Date:</strong> 29/07/23 – 30/07/23</p>
+          <p class="card-text"><strong>Venue:</strong> Adani University</p>
+          <p class="card-text"><strong>Ranked:</strong> First</p>
+          <p class="card-text mb-3">
+            <strong>Introduction:</strong> NewsHub is a hackathon-winning web
+            platform designed to revolutionize how users read and share news.
+            Recognized for its innovative design and user-centric approach,
+            NewsHub was developed using React.js, Node.js, Express.js, and
+            MongoDB, focusing on personalized recommendations and intuitive
+            search by pin code.
+          </p>
+          <!-- Collapse for additional details -->
+          <div class="collapse" id="hackathonDetails">
+            <p class="card-text">
+              <strong>Problem Statement:</strong> In today's fast-paced world,
+              staying updated with relevant news can be challenging. NewsHub
+              addresses this by offering a personalized news reading experience
+              based on users' interests and locations.
+            </p>
+            <p class="card-text">
+              <strong>Approach:</strong> Our approach was bottom-to-top,
+              starting with user needs and building a robust platform around
+              those requirements. This method ensured a user-friendly interface
+              and seamless functionality.
+            </p>
+            <p class="card-text">
+              <strong>Solution:</strong> NewsHub provides a streamlined user
+              flow from registration to news consumption, featuring personalized
+              recommendations, category selection, and intuitive search and
+              filter options.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card-footer d-flex justify-content-between align-items-center"
+        >
+          <button
+            class="btn btn-outline-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#hackathonDetails"
+            aria-expanded="false"
+            aria-controls="hackathonDetails"
+          >
+            More Info
+          </button>
+          <a
+            href="https://github.com/Ashking1956/NewsHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-dark"
+          >
+            <img
+              src="{% static 'icons/github_icon.png' %}"
+              class="img-fluid"
+              alt="GitHub"
+              style="max-width: 24px; filter: invert(100%) brightness(100%)"
+            />
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Add more cards for additional achievements if needed -->
   </div>
 </section>
 
