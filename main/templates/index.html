@@ -8,7 +8,7 @@ Portfolio {% endblock %} {% block content %}
   </div>
 </section>
 
-<section id="about" class="py-5 bg-dark">
+<section id="about" class="py-5 bg-dark text-white">
   <div class="container">
     <div class="row">
       <div class="col-md-8">
@@ -89,21 +89,20 @@ Portfolio {% endblock %} {% block content %}
   </div>
 </section>
 
-<section id="experience" class="py-5 bg-dark text-light">
+<section id="experience" class="py-5 bg-dark text-white">
   <div class="container">
-    <h2 class="display-6 mb-4 text-left text-white">Experience</h2>
+    <h2 class="display-6 mb-4 text-white">Experience</h2>
     <div class="timeline position-relative">
       <!-- Timeline Item -->
-      {% comment %} Prodigy Internship {% endcomment %}
       <div class="timeline-item mb-5 position-relative">
         <div class="row align-items-center">
           <div class="col-md-2 text-md-right text-center mb-3 mb-md-0">
-            <span class="timeline-date bg-dark text-whitepy-2 px-3 rounded">
+            <span class="timeline-date bg-dark text-white py-2 px-3 rounded">
               July 2024
             </span>
           </div>
           <div class="col-md-10">
-            <div class="card bg-dark text-light shadow-lg border-1">
+            <div class="card bg-dark text-light shadow-lg border-2">
               <div class="card-body">
                 <h5 class="card-title text-white">
                   Android Development Intern
@@ -122,29 +121,176 @@ Portfolio {% endblock %} {% block content %}
                   </li>
                   <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                    Developed various Android applications, including a
-                    <strong>Calculator</strong> App for arithmetic operations, a
-                    <strong>To-Do List</strong> App with task management
-                    functionalities (add, edit, delete), a
-                    <strong>Tic Tac Toe</strong> Game App with turn-based
-                    gameplay and reset options, and a
-                    <strong>QR Code Scanner</strong> App to scan and interpret
-                    QR codes, display encoded information, and perform actions
-                    based on the content.
-                  </li>
-                  <li class="mb-3">
-                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
                     Enhanced technical knowledge and contributed to development
                     projects.
                   </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill card-title me-2"></i>
+                    <strong><strong>Project Details</strong></strong>
+                  </li>
                 </ul>
+                <section id="projects">
+                  <div class="container mt-5">
+                    <div id="projectCarousel" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#projectCarousel"
+                          data-bs-slide-to="0"
+                          class="active bg-white"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#projectCarousel"
+                          data-bs-slide-to="1"
+                          class="bg-white"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#projectCarousel"
+                          data-bs-slide-to="2"
+                          class="bg-white"
+                          aria-label="Slide 3"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#projectCarousel"
+                          data-bs-slide-to="3"
+                          class="bg-white"
+                          aria-label="Slide 4"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#projectCarousel"
+                          data-bs-slide-to="4"
+                          class="bg-white"
+                          aria-label="Slide 5"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <!-- Calculator App -->
+                        <div class="carousel-item active">
+                          <div style="height: 200px" class="card mx-2">
+                            <div class="card-body">
+                              <h5 class="card-title">Calculator App</h5>
+                              <p class="card-text">
+                                <strong>Basic Arithmetic Operations</strong>:
+                                Performs addition, subtraction, multiplication,
+                                and division.
+                              </p>
+                              <p class="card-text">
+                                <strong>Clean Interface</strong>: Intuitive and
+                                responsive design for a seamless user
+                                experience.
+                              </p>
+                              <p class="card-text">
+                                <strong>Technical Proficiency</strong>:
+                                Demonstrates strong UI/UX skills and
+                                mathematical functionality implementation.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- To-Do List App -->
+                        <div class="carousel-item">
+                          <div style="height: 200px" class="card mx-2">
+                            <div class="card-body">
+                              <h5 class="card-title">To-Do List App</h5>
+                              <p class="card-text">
+                                <strong>Task Management</strong>: Allows users
+                                to add, edit, and delete tasks effortlessly.
+                              </p>
+                              <p class="card-text">
+                                <strong>User-Friendly Design</strong>: Intuitive
+                                interface for smooth task handling.
+                              </p>
+                              <p class="card-text">
+                                <strong>Efficient Data Storage</strong>:
+                                Effective local data management and CRUD
+                                operations.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Stopwatch App -->
+                        <div class="carousel-item">
+                          <div style="height: 200px" class="card mx-2">
+                            <div class="card-body">
+                              <h5 class="card-title">Stopwatch App</h5>
+                              <p class="card-text">
+                                <strong>Accurate Timekeeping</strong>: Reliable
+                                stopwatch with start, stop, and reset
+                                functionalities.
+                              </p>
+                              <p class="card-text">
+                                <strong>Simple Interface</strong>: Easy-to-use
+                                design ensuring precise time measurement.
+                              </p>
+                              <p class="card-text">
+                                <strong>Attention to Detail</strong>:
+                                Demonstrates proficiency in implementing
+                                time-based features.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Tic Tac Toe Game App -->
+                        <div class="carousel-item">
+                          <div style="height: 200px" class="card mx-2">
+                            <div class="card-body">
+                              <h5 class="card-title">Tic Tac Toe Game App</h5>
+                              <p class="card-text">
+                                <strong>Two-Player Mode</strong>: Classic game
+                                allowing two players to take turns.
+                              </p>
+                              <p class="card-text">
+                                <strong>Interactive Gameplay</strong>: Engaging
+                                and clear game interface.
+                              </p>
+                              <p class="card-text">
+                                <strong>Game Logic</strong>: Includes reset
+                                option to start new games, showcasing logical
+                                and functional programming skills.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- QR Code Scanner App -->
+                        <div class="carousel-item">
+                          <div style="height: 200px" class="card mx-2">
+                            <div class="card-body">
+                              <h5 class="card-title">QR Code Scanner App</h5>
+                              <p class="card-text">
+                                <strong>QR Code Scanning</strong>: Utilizes the
+                                device’s camera to scan and decode QR codes.
+                              </p>
+                              <p class="card-text">
+                                <strong>Information Display</strong>: Extracts
+                                and displays information from scanned codes.
+                              </p>
+                              <p class="card-text">
+                                <strong>Actionable Features</strong>: Provides
+                                options to open links or perform actions based
+                                on scanned content, highlighting integration
+                                with external libraries and camera
+                                functionalities.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Timeline Item -->
-      {% comment %} IBM AI ML Internship {% endcomment %}
       <div class="timeline-item mb-5 position-relative">
         <div class="row align-items-center">
           <div class="col-md-2 text-md-right text-center mb-3 mb-md-0">
@@ -153,13 +299,13 @@ Portfolio {% endblock %} {% block content %}
             </span>
           </div>
           <div class="col-md-10">
-            <div class="card bg-dark text-light shadow-lg border-1">
+            <div class="card bg-dark text-light shadow-lg border-2">
               <div class="card-body">
                 <h5 class="card-title text-white">
                   IBM SkillsBuild AI-ML Internship
                 </h5>
                 <p class="card-text text-muted mb-3">@IBM</p>
-                <ul class="list-styled">
+                <ul class="list-unstyled">
                   <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-primary me-2"></i>
                     Completed a 3-week AI-focused internship with IBM
@@ -195,7 +341,7 @@ Portfolio {% endblock %} {% block content %}
   </div>
 </section>
 
-<section id="projects" class="py-5 bg-dark">
+<section id="projects" class="py-5 bg-dark text-white">
   <div class="container">
     <h2 class="display-6 mb-4 text-left">Projects</h2>
     <div class="row">
@@ -477,7 +623,6 @@ Portfolio {% endblock %} {% block content %}
   </div>
 </section>
 
-{% comment %}
 <section id="Certificates">
   <div class="container mt-5">
     <h2 class="text-center mb-4">Certificates</h2>
@@ -486,6 +631,28 @@ Portfolio {% endblock %} {% block content %}
       class="carousel slide"
       data-bs-ride="carousel"
     >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#certificateCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#certificateCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#certificateCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
@@ -496,14 +663,14 @@ Portfolio {% endblock %} {% block content %}
         </div>
         <div class="carousel-item">
           <img
-            src="{% static 'certificates/ai_fundamentals_ibm_badge.png' %}"
+            src="{% static 'certificates/getting_started_wiht_ai_ibm_badge.png' %}"
             class="d-block w-100"
             alt="Certificate 2"
           />
         </div>
         <div class="carousel-item">
           <img
-            src="{% static 'certificates/ai_fundamentals_ibm_badge.png' %}"
+            src="{% static 'certificates/Android Certi.png' %}"
             class="d-block w-100"
             alt="Certificate 3"
           />
@@ -530,7 +697,6 @@ Portfolio {% endblock %} {% block content %}
     </div>
   </div>
 </section>
-{% endcomment %}
 
 <section id="contact" class="py-5 bg-dark">
   <div class="container">
