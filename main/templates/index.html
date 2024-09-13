@@ -513,28 +513,37 @@ Portfolio {% endblock %} {% block content %}
 
 <section id="projects" class="py-5 bg-dark text-white">
   <div class="container">
-    <h2 class="display-6 mb-4 text-left">Projects</h2>
+    <h2 class="display-6 mb-5 text-center">Projects</h2>
     <div class="row">
-      {% comment %} TuneMood Card View {% endcomment %}
+      <!-- TuneMood Card -->
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100">
+        <div class="card h-100 bg-dark shadow-sm border-2">
           <img
-            src="{% static 'images/CareerExplorer.png' %}"
+            src="{% static 'images/TuneMood.png' %}"
             class="card-img-top img-fluid p-3"
             alt="TuneMood Project"
+            style="height: 250px; object-fit: cover"
           />
-          <div class="card-body">
-            <h5 class="card-title">TuneMood: AI-based music player app</h5>
-            <p class="card-text text-muted text">
-              An AI-based music player app that curates song recommendations
-              based on user mood and preferences. Utilizes emotional
-              intelligence and advanced algorithms for a personalized listening
-              experience.
+          <div class="card-body text-dark">
+            <h5 class="card-title text-white">
+              TuneMood: Android music player app.
+            </h5>
+            <p class="card-text text-muted">
+              Developed a music player app using Android SDK, Android Studio,
+              Jetpack Compose, Kotlin, Retrofit, Material Theme, and Python,
+              featuring an advanced playlist generator that adapts to the user's
+              mood. Implemented personalized recommendations and music
+              discovery, offering tailored suggestions for artists, playlists,
+              and songs from an extensive library, focused on creating an
+              engaging and responsive user experience with a modern,
+              user-friendly interface
             </p>
           </div>
-          <div class="card-footer d-flex justify-content-between">
+          <div
+            class="card-footer border-2 d-flex justify-content-between align-items-center"
+          >
             <button
-              class="btn btn-primary"
+              class="btn btn-primary btn-sm"
               type="button"
               data-toggle="collapse"
               data-target="#moreInfoTuneMood"
@@ -547,13 +556,13 @@ Portfolio {% endblock %} {% block content %}
               href="https://github.com/Ashking1956/TuneMood"
               target="_blank"
               rel="noopener noreferrer"
-              class="align-self-end"
+              class="github-icon"
             >
               <img
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
-                style="max-width: 30px; filter: invert(100%) brightness(100%)"
+                style="width: 30px; filter: invert(1)"
               />
             </a>
           </div>
@@ -570,34 +579,42 @@ Portfolio {% endblock %} {% block content %}
               voice commands
             </li>
             <li class="list-group-item">
-              <strong>Challenges:</strong> Implementing real-time mood
-              detection, optimizing recommendation algorithms
+              <strong>Challenges:</strong> Real-time mood detection, optimizing
+              recommendation algorithms
             </li>
           </ul>
         </div>
       </div>
 
-      {% comment %} ExplorerInns Card View {% endcomment %}
+      <!-- ExplorerInns Card -->
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100">
+        <div class="card h-100 bg-dark shadow-sm border-2">
           <img
             src="{% static 'images/ExplorerInns.png' %}"
-            class="card-img-top img-fluid"
+            class="card-img-top img-fluid p-3"
             alt="ExplorerInns Project"
+            style="height: 250px; object-fit: cover"
           />
-          <div class="card-body">
-            <h5 class="card-title">
-              ExplorerInns: ML-based recommendation system for accommodation
+          <div class="card-body text-dark">
+            <h5 class="card-title text-white text-align-justify ">
+              ExplorerInns: Web application for real estate listings and realtor
+              management
             </h5>
-            <p class="card-text text-muted">
-              A comprehensive ML-based recommendation system for accommodation
-              planning. Provides personalized lodging suggestions and detailed
-              information to enhance travel experiences.
+            <p class="card-text text-align-justify text-muted">
+              Developed a web application for managing real estate listings
+              using HTML, CSS, Bootstrap, Django, and Python. Implemented user
+              authentication, detailed nearby attractions, and search
+              functionality based on user requirements, which enhanced
+              engagement and streamlined real estate inquiries, led to efficient
+              management of property listings and realtor data, improving the
+              overall user experience.
             </p>
           </div>
-          <div class="card-footer d-flex justify-content-between">
+          <div
+            class="card-footer border-2 d-flex justify-content-between align-items-center"
+          >
             <button
-              class="btn btn-primary"
+              class="btn btn-primary btn-sm"
               type="button"
               data-toggle="collapse"
               data-target="#moreInfoExplorerInns"
@@ -610,13 +627,13 @@ Portfolio {% endblock %} {% block content %}
               href="https://github.com/Ashking1956/ExplorerInns"
               target="_blank"
               rel="noopener noreferrer"
-              class="align-self-end"
+              class="github-icon"
             >
               <img
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
-                style="max-width: 30px; filter: invert(100%) brightness(100%)"
+                style="width: 30px; filter: invert(1)"
               />
             </a>
           </div>
@@ -626,34 +643,37 @@ Portfolio {% endblock %} {% block content %}
           >
             <li class="list-group-item">
               <strong>Tools:</strong> React.js, Node.js, Express.js, MongoDB,
-              Mongoose, Python
+              Python
             </li>
           </ul>
         </div>
       </div>
 
-      {% comment %} CareerExplorer Card View {% endcomment %}
+      {% comment %} <!-- CareerExplorer Card -->
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100">
+        <div class="card h-100 bg-dark shadow-sm border-2">
           <img
             src="{% static 'images/CareerExplorer.png' %}"
             class="card-img-top img-fluid p-3"
             alt="CareerExplorer Project"
+            style="height: 250px; object-fit: cover"
           />
-          <div class="card-body">
-            <h5 class="card-title">
-              CareerExplorer: Platform for exploring career paths
+          <div class="card-body text-dark">
+            <h5 class="card-title text-white">
+              CareerExplorer: Career Path Platform
             </h5>
             <p class="card-text text-muted">
-              A platform for exploring potential career paths, offering insights
-              into industries, job roles, and educational requirements. Features
+              A platform for exploring career paths, offering insights into
+              industries, job roles, and educational requirements. Features
               personalized career assessments and up-to-date industry
               information.
             </p>
           </div>
-          <div class="card-footer d-flex justify-content-between">
+          <div
+            class="card-footer border-2 d-flex justify-content-between align-items-center"
+          >
             <button
-              class="btn btn-primary"
+              class="btn btn-primary btn-sm"
               type="button"
               data-toggle="collapse"
               data-target="#moreInfoCareerExplorer"
@@ -666,13 +686,13 @@ Portfolio {% endblock %} {% block content %}
               href="https://github.com/Ashking1956/CareerExplorer"
               target="_blank"
               rel="noopener noreferrer"
-              class="align-self-end"
+              class="github-icon"
             >
               <img
-                style="filter: invert(100%) brightness(100%); max-width: 30px"
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
+                style="width: 30px; filter: invert(1)"
               />
             </a>
           </div>
@@ -682,34 +702,40 @@ Portfolio {% endblock %} {% block content %}
           >
             <li class="list-group-item">
               <strong>Tools:</strong> HTML, CSS, JavaScript, MySQL, React.js,
-              Node.js, Express.js, MongoDB, Mongoose
+              Node.js
             </li>
           </ul>
         </div>
-      </div>
+      </div> {% endcomment %}
 
-      {% comment %} E-Seva Card View {% endcomment %}
+      <!-- E-Seva Card -->
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100">
+        <div class="card h-100 bg-dark shadow-sm border-2">
           <img
-            src="{% static 'images/CareerExplorer.png' %}"
+            src="{% static 'images/E-Seva.png' %}"
             class="card-img-top img-fluid p-3"
-            alt="E Seva Project"
+            alt="E-Seva Project"
+            style="height: 250px; object-fit: cover"
           />
-          <div class="card-body">
-            <h5 class="card-title">
-              E – Seva: Application for awareness about government schemes
+          <div class="card-body text-dark">
+            <h5 class="card-title text-white">
+              E – Seva: Application for awareness about government schemes.
             </h5>
             <p class="card-text text-muted">
-              An application providing awareness about government schemes
-              tailored to different professions. Offers guides on eligibility,
-              necessary documents, and locations of government offices for both
-              state and central schemes.
+              Developed an Android application using Kotlin, Jetpack Compose,
+              and Android Studio to offer comprehensive guides on government
+              schemes and scholarships. Designed and implemented features
+              including eligibility criteria, required documents, and real-time
+              updates, enhancing user access to accurate and up-to-date
+              information. Enabling users to access authenticated website links
+              for reliable schemes and scholarship details.
             </p>
           </div>
-          <div class="card-footer d-flex justify-content-between">
+          <div
+            class="card-footer border-2 d-flex justify-content-between align-items-center"
+          >
             <button
-              class="btn btn-primary"
+              class="btn btn-primary btn-sm"
               type="button"
               data-toggle="collapse"
               data-target="#moreInfoESeva"
@@ -722,13 +748,13 @@ Portfolio {% endblock %} {% block content %}
               href="https://github.com/Ashking1956/E-Seva"
               target="_blank"
               rel="noopener noreferrer"
-              class="align-self-end"
+              class="github-icon"
             >
               <img
-                style="filter: invert(100%) brightness(100%); max-width: 30px"
                 src="{% static 'icons/github_icon.png' %}"
                 class="img-fluid"
                 alt="GitHub"
+                style="width: 30px; filter: invert(1)"
               />
             </a>
           </div>
